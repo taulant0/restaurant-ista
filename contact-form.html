@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+<h2>Contact us</h2>
+<form id="contact_us" action="#" method="post">
+    <label for="name" >Name:</label>
+    <input type="text" name="name" id="name" placeholder="Ex. Taulant" required>
+    <label for="surname" >Surname:</label>
+    <input type="text" name="surname" id="surname" placeholder="Ex. Shala" required><br>
+
+    <p> In case you do not wish to fill in the contact form, or you have not received a reply, please feel free to use the email below to reach out to us!</p><br>
+
+    <a href = ":mailto filan@fisteku.com">filan@fisteku.com</a><br><br>
+
+  
+  <label for="phone-number" >Phone number:</label>
+  <select name="phone-number-prefix" id="phone-number-prefix">
+    <option value="+383">+383</option>
+    <option value="other">other</option>
+    </select>
+  <input type="tel"  id="phone-number" placeholder="123456" required> <br>
+  <br><p>If your phone number's prefix is not +383, please include it in the box.</p>
+  
+  <label for="email">Email:</label>
+  <input type="email" name = "email" id="email" placeholder="ex. filan@fisteku.com" required><br><br>
+
+  <label for="city" >City:</label>
+  <input type="text" name="city" id="city" placeholder="Prishtinë" required>
+  <label for="Zip-code" >Postal code:</label>
+  <input type="number" name="zip-code" id="zip code" placeholder="10000" required><br><br>
+
+
+  <div> <label for="Have you ordered our dishes?">Have you ordered our dishes?</label><br>
+    <label for="ordered">Yes</label>
+    <input type="radio" name="order" id="ordered" value="ordered"><br>
+    <label for="have-not-ordered">No</label>
+    <input type="radio" name="order" id="have-not-ordered" value="have-not-ordered"></div><br>
+
+    <p>If yes, when:  
+
+    <label for="date"></label>
+        <input type="date" name="date" id="date" placeholder="DD/MM/YYYY" > </p><br><br>
+        
+        <label for="subject">Subject:</label>
+        <select name="subject" id="subject">
+            <option value="+383">Inquiry about our food services?</option>
+            <option value="other">Difficuly ordering.</option>
+            <option value="other">Order has not arrived.</option>
+            <option value="other">Order arrived too late.</option>
+            <option value="other">other</option>
+            </select> <br><br>
+
+
+            <label for="Message" >How may we be of service to you:</label> <br>
+<input type="text" name="nmessage" id="message" style="width: 500px; height: 200px;" required><br><br>
+   
+<button type = "send">Send</button>
+
+</form>
+
+
+</section>
+
+</body>
+</html>
