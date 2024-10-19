@@ -12,3 +12,24 @@
 </header>
 
 <link rel="stylesheet" href="templates/header-template.css">
+
+
+<script>
+    
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const lines = document.querySelectorAll('.burger div');
+
+// Toggle nav
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+
+    // Burger animation
+    lines.forEach((line, index) => {
+        if (line.style.transform === '') {
+            line.style.transform = 'none';
+        }
+        line.classList.toggle('line-animation');
+    });
+});
+</script>

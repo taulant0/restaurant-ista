@@ -73,3 +73,21 @@
 
     }
     
+
+
+    @media (max-width: 768px) {
+    .footer-column h3{
+        text-align: center;
+    }
+    .footer-column p{
+
+        text-align: center;
+    }
+
+
+    .logo-photo{
+
+        display: flex;
+        justify-content: center;
+    }
+    }

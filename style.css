@@ -246,21 +246,7 @@ background-color: #bbd8f7;
         
         }
 
-        @media screen and (max-width: 768px)
-        {
-            .order-process{
-                width:  calc(50% - 1rem);
-            }
-            
-        }
-
-        @media screen and (max-width: 576px)
-        {
-            .order-process{
-                width: 100%;
-                height: 150px;
-            }
-        }
+     
         .original-taste{
             display: flex;
             flex-direction:column ;
@@ -839,5 +825,107 @@ color: white;
 
 
 
+@media screen and (max-width: 768px) {
+    .restaurant-section {
+        flex-direction: column; /* Stack the restaurant info and image vertically */
+    }
+
+    .restaurant-section #restaurant-info,
+    .restaurant-section #restaurant-image {
+        margin: 0; /* Remove margins for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        max-width: 90%; /* Ensure both sections fit nicely on smaller screens */
+    }
+
+    .order-process {
+        width: calc(100% - 1rem); /* Adjust width for smaller screens */
+    }
+
+.text p{
+    padding: 10PX;
+}
+
+.statistic-number{
+
+    font-size: 25px;
+}
+.statistic-text{
+
+    font-size: 15px;
+}
+
+.section-description{
+    padding: 10px;
+}
+
+.map{
+    flex-direction: column;
+margin-top: 0;
+
+}
+
+.address{
+    margin-left: 0;
+}
+
+.map iframe{
+    margin-left: 0;
+    width: 100%;
+}
+
+.address h2{
+    font-size: 20px;
+}
+
+
+.video-header{
+    font-size: 20px;
+}
+.video-text{
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.contact-form form input[type="text"], .contact-form form input[type="email"], .contact-form form textarea {
+
+    width: 93%;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .order-process {
+        width: 100%; /* Ensure order process boxes take full width */
+        height: auto; /* Remove fixed height for flexibility */
+    }
+
+    .about-us {
+        height: auto; /* Remove fixed height for flexibility */
+    }
+
+    .about-us-content {
+        width: 90%; /* Keep the content responsive */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .contact-form form {
+        margin-left: 20px; /* Reduce margin for smaller screens */
+        margin-right: 20px; /* Reduce margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .location {
+        flex-direction: column; /* Stack address and map vertically */
+        margin: 20px; /* Adjust margin */
+    }
+
+    .map {
+        margin-left: 0; /* Center the map */
+    }
+}
 
 
